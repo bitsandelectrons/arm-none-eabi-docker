@@ -41,7 +41,7 @@ RUN toolchainVersion=13.2.rel1; \
 	; \
     dpkgArch="$(dpkg --print-architecture)"; \
     case "${dpkgArch##*-}" in \
-        amd64) hostArch='x86_64'; toolchainSha256='7fe7b8548258f079d6ce9be9144d2a10bd2bf93b551dafbf20fe7f2e44e014b8' ;; \
+        amd64) hostArch='x86_64'; toolchainSha256='6cd1bbc1d9ae57312bcd169ae283153a9572bd6a8e4eeae2fedfbc33b115fdbb' ;; \
         arm64) hostArch='aarch64'; toolchainSha256='8fd8b4a0a8d44ab2e195ccfbeef42223dfb3ede29d80f14dcf2183c34b8d199a' ;; \
         *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; \
     esac; \
