@@ -21,6 +21,7 @@ RUN set -eux; \
 	texinfo \
 	which \
 	cmake \
+	make-guile \
         gdb-multiarch \
         git \
         default-jre-headless \
